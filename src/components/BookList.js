@@ -34,7 +34,7 @@ function BookList() {
 
   const deleteBookList = (book) => {
     const newItems = { ...bookList };
-    delete newItems[book]; 
+    delete newItems[book];
     setBookList(newItems);
   };
 
