@@ -4,30 +4,23 @@ function BookList() {
   const [bookList, setBookList] = useState({
     item1: [
       {
-        title: 'The Lord of the Rings',
-        author: 'J.R.R. Tolkien',
-        category: 'Fiction',
+        title: 'The Hunger Games',
+        author: 'Suzanne Collins',
+        category: 'Action',
       },
     ],
     item2: [
       {
-        title: 'Fahrenheit 451',
-        author: 'Ray Bradbury',
-        category: 'Fiction',
+        title: 'Dune',
+        author: 'Frank Herbert',
+        category: 'Science Fiction',
       },
     ],
     item3: [
       {
-        title: 'Frankenstein ',
-        author: 'Mary Shelley',
-        category: 'Fiction',
-      },
-    ],
-    item4: [
-      {
-        title: 'The Great Gatsby ',
-        author: 'F. Scott Fitzgerald',
-        category: 'Fiction',
+        title: 'Capital in the Twenty-First Century',
+        author: 'Suzanne Collins',
+        category: 'Economy',
       },
     ],
   });
@@ -58,7 +51,7 @@ function BookList() {
               deleteBookList(book);
             }}
           >
-            Delete
+            Remove
           </button>
         </div>
       ))}
