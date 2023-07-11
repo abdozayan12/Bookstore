@@ -23,10 +23,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math__magicians] <a name="about-project"></a>
+# 📖 [Bookstore] <a name="about-project"></a>
 
-> This is a math magician's app built with HTML, CSS, and REACT in this app you can make some calculations math like addition and division..etc, also I used the external API to fetch some quotes for the app using the use effect hook.
-
+>The Bookstore is a website that allow you to Display a list of books, Add a book, and Remove a selected book
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -71,7 +70,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:abdozayan12/Math-Magicians.git
+  git clone git@github.com:abdozayan12/Bookstore.git
 ```
 
 
@@ -79,7 +78,7 @@ Clone this repository to your desired folder:
 
 Install this project with:
 ```sh
-  cd Math-Magicians
+  cd Bookstore
   npm install
 ```
 
@@ -134,7 +133,7 @@ npx eslint . --fix
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/abdozayan12/Math-Magicians/issues).
+Feel free to check the [issues page](https://github.com/abdozayan12/Bookstore/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,7 +155,7 @@ Feel free to check the [issues page](https://github.com/abdozayan12/Math-Magicia
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/abdozayan12/Math-Magicians/blob/Math-Magicians-setup/MIT.md) licensed.
+This project is [MIT](https://github.com/abdozayan12/Bookstore/blob/Development/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
