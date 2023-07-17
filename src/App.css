@@ -138,3 +138,7 @@
   color: #fff;
   border: none;
 }
+
+.form button:hover {
+  cursor: pointer;
+}
