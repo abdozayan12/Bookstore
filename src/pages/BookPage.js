@@ -5,7 +5,7 @@ import AddNewBook from '../components/AddNewBook';
 function BookPage() {
   return (
     <main className="page">
-      <BookList />
+      <BookList key="book" />
       <AddNewBook />
     </main>
   );

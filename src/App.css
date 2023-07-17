@@ -119,9 +119,10 @@
 .form select,
 .form button {
   height: 100%;
-  box-sizing: border-box;
   padding: 10px 15px;
   font-size: 15px;
+  border: 2px solid;
+  border-radius: 8px;
 }
 
 .form input {
@@ -137,4 +138,8 @@
   background-color: var(--primary-color);
   color: #fff;
   border: none;
+}
+
+.form button:hover {
+  cursor: pointer;
 }
