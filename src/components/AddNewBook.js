@@ -13,7 +13,7 @@ function AddNewBookForm() {
       <div className="form-wrapper">
         <h3>ADD NEW BOOK</h3>
         <form className="form">
-        <input
+          <input
             placeholder="Book title"
             onChange={(e) => {
               setNewBook({ ...newBook, title: e.target.value });
@@ -28,11 +28,11 @@ function AddNewBookForm() {
             value={newBook.author}
           >
             <option value="" defaultValue="Author" disabled>
-            Author
+              Author
             </option>
-            <option value="J.R.R. Tolkien">J.R.R. Tolkien</option>
+            <option value="Suzanne Collins">Suzanne Collins</option>
             <option value="Ray Bradbury">Ray Bradbury</option>
-            <option value="J. K. Rowling">J. K. Rowling</option>
+            <option value="Frank Herbert">Frank Herbert</option>
             <option value="Mary Shelley">Mary Shelley</option>
           </select>
           <select
@@ -45,9 +45,9 @@ function AddNewBookForm() {
             <option value="" defaultValue="Category" disabled>
               Category
             </option>
-            <option value="Fiction">Fiction</option>
-            <option value="Nonfiction">Nonfiction</option>
-            <option value="Biography">Biography</option>
+            <option value="Action">Action</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Economy">Economy</option>
           </select>
           <button
             type="submit"

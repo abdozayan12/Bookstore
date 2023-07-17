@@ -11,9 +11,9 @@ function BookCard({ book }) {
   };
   return (
     <div className="book-card" key={book.item_id}>
-      <div className="book-category">{book.category}</div>
       <div className="book-title">{book.title}</div>
       <div className="book-author">{book.author}</div>
+      <div className="book-category">{book.category}</div>
       <button
         key={book.item_id}
         type="button"
