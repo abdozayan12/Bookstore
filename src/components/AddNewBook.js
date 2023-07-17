@@ -31,6 +31,9 @@ function AddNewBookForm() {
               Author
             </option>
             <option value="Suzanne Collins">Suzanne Collins</option>
+            <option value="John Smith">John Smith</option>
+            <option value="Leo Tolstoy">Leo Tolstoy</option>
+            <option value="Richard Dawkins">Richard Dawkins</option>
             <option value="Ray Bradbury">Ray Bradbury</option>
             <option value="Frank Herbert">Frank Herbert</option>
             <option value="Mary Shelley">Mary Shelley</option>
@@ -46,6 +49,8 @@ function AddNewBookForm() {
               Category
             </option>
             <option value="Action">Action</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Nonfiction">Nonfiction</option>
             <option value="Science Fiction">Science Fiction</option>
             <option value="Economy">Economy</option>
           </select>
