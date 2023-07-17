@@ -1,63 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import BookCard from './BookCard';
 
 function BookList() {
-  const [bookList, setBookList] = useState({
-    item1: [
-      {
-        title: 'The Hunger Games',
-        author: 'Suzanne Collins',
-        category: 'Action',
-      },
-    ],
-    item2: [
-      {
-        title: 'Dune',
-        author: 'Frank Herbert',
-        category: 'Science Fiction',
-      },
-    ],
-    item3: [
-      {
-        title: 'Capital in the Twenty-First Century',
-        author: 'Suzanne Collins',
-        category: 'Economy',
-      },
-    ],
-  });
-
-  const deleteBookList = (book) => {
-    const newItems = { ...bookList };
-    delete newItems[book];
-    setBookList(newItems);
-  };
-
+  const bookList = useSelector((state) => state.books.value);
+   
   return (
-    <div className="book-container">
-      {Object.keys(bookList).map((book) => (
-        <div className="book-card" key={book}>
-          <div className="book-category">
-            {bookList[book][0].category}
-          </div>
-          <div className="book-title">
-            {bookList[book][0].title}
-          </div>
-          <div className="book-author">
-            {bookList[book][0].author}
-          </div>
-          <button
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              deleteBookList(book);
-            }}
-          >
-            Remove
-          </button>
-        </div>
-      ))}
-      <hr />
-    </div>
-  );
+    <div className="book-container" key="book-container">
+    {bookList.map((book) => (
+      <BookCard book={book} key={book.item_id} />
+    ))}
+    <hr />
+  </div>
+);
 }
-
 export default BookList;
