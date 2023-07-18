@@ -102,8 +102,12 @@
   padding: 0;
 }
 
+.book-card-button-container button:hover {
+  cursor: pointer;
+}
+
 .vertical-divider {
-  border-left: 2px solid var(--primary-color);
+  border-left: 2px solid #e8e8e8;
   height: 80%;
 }
 
@@ -138,6 +142,10 @@
   border: none;
   font-size: 10px;
   padding: 7px 15px;
+}
+
+.book-update-progress-button:hover {
+  cursor: pointer;
 }
 
 .form-container {
