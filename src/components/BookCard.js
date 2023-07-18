@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteBook } from '../redux/books/booksSlice';
+import { deleteBookCallAPI } from '../redux/books/booksSlice';
 
 function BookCard({ book }) {
   const dispatch = useDispatch();
 
   const deleteBookList = (id) => {
-    dispatch(deleteBook(id));
+    dispatch(deleteBookCallAPI({ item_id: id }));
   };
   return (
     <div className="book-card" key={book.item_id}>

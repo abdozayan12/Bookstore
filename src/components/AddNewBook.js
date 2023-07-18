@@ -1,10 +1,11 @@
 import { v4 as uuid } from 'uuid';
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { addNewBookCallAPI } from '../redux/books/booksSlice';
 
 function AddNewBookForm() {
   const dispatch = useDispatch();
+  const responseStatus = useSelector((state) => state.status);
   const initialState = { title: '', category: '', author: '' };
   const [newBook, setNewBook] = useState(initialState);
 
@@ -59,8 +60,8 @@ function AddNewBookForm() {
             onClick={(e) => {
               e.preventDefault();
               if (newBook.author && newBook.title && newBook.category) {
-                dispatch(addBook({ item_id: uuid(), ...newBook }));
-                setNewBook(initialState);
+                dispatch(addNewBookCallAPI({ item_id: uuid(), ...newBook }));
+                if (responseStatus === 'completed') setNewBook(initialState);
               }
             }}
           >
