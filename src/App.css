@@ -112,11 +112,12 @@
 .form input,
 .form select,
 .form button {
-  height: 100%;
+  height: 2.813rem;
   padding: 10px 15px;
   font-size: 15px;
-  border: 2px solid;
-  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .book-card-button-container button:hover {
