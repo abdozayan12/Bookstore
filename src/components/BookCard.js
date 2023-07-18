@@ -17,9 +17,9 @@ function BookCard({ book }) {
   return (
     <div className="book-card" key={book.item_id}>
       <div className="book-card-left-container">
-        <div className="book-category">{book.category}</div>
         <div className="book-title">{book.title}</div>
         <div className="book-author">{book.author}</div>
+        <div className="book-category">{book.category}</div>
         <div className="book-card-button-container">
           <button type="button">
             Comments
@@ -60,14 +60,14 @@ function BookCard({ book }) {
             }}
           />
         </div>
-        <div className="" style={{ fontSize: '30px' }}>
+        <div className="Percent">
           {`${randomProgress}%`}
-          <div style={{ fontSize: '15px' }}>Completed</div>
+          <div className="complete">Completed</div>
         </div>
         <div className="vertical-divider" />
         <div>
-          <div style={{ fontSize: '12px', fontWeight: '300' }}>CURRENT CHAPTER</div>
-          <div style={{ marginBottom: '10px' }}>{`Chapter ${randomChapter}`}</div>
+          <div className="currentCh">CURRENT CHAPTER</div>
+          <div className="randomCh">{`Chapter ${randomChapter}`}</div>
           <button className="book-update-progress-button" type="button">
             Update Progress
           </button>

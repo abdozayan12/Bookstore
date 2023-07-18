@@ -28,9 +28,10 @@
 
 .nav-wrapper .nav-title {
   color: var(--primary-color);
-  font-weight: 800;
-  font-size: xx-large;
   padding-block: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
 }
 
 .link-container {
@@ -76,30 +77,35 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  /* gap: 10px; */
 }
 
 .book-card-right-container {
-  width: 50%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .book-card-button-container {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  gap: 10px;
+  gap: 15px;
   height: 20px;
 }
 
 .book-card-button-container button {
   background-color: transparent;
   border: none;
-  color: rgb(46, 46, 127);
-  font-weight: 200;
+  color: #4386bf;
+
+  /* font-weight: 200; */
   padding: 0;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
 }
 
 .form button {
@@ -126,7 +132,7 @@
 
 .vertical-divider {
   border-left: 2px solid #e8e8e8;
-  height: 80%;
+  height: 1.5rem;
 }
 
 .divider-book-form {
@@ -137,21 +143,53 @@
 
 .book-category {
   font-weight: 600;
+  color: #121212;
+  opacity: 0.5;
+  font-size: 0.875rem;
 }
 
 .book-title {
-  font-size: larger;
-  font-weight: 700;
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #121212;
 }
 
 .book-author {
-  color: var(--primary-color);
-  font-weight: 700;
+  color: #4386bf;
+  font-weight: 300;
+  font-size: 0.875rem;
+  font-family: 'RobotoSlab', sans-serif;
 }
 
 .book-progressbar {
   width: 20%;
   height: auto;
+}
+
+.Percent {
+  font-size: 30px;
+}
+
+.complete {
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+}
+
+.currentCh {
+  opacity: 0.5;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+  padding-bottom: 5px;
+}
+
+.randomCh {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 5px;
 }
 
 .book-update-progress-button {
@@ -160,6 +198,10 @@
   border: none;
   font-size: 10px;
   padding: 7px 15px;
+  width: 11.5rem;
+  height: 2.063rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
 }
 
 .book-update-progress-button:hover {
@@ -196,7 +238,7 @@
 }
 
 .form select {
-  width: 15%;
+  width: 20%;
 }
 
 .form button:hover {
