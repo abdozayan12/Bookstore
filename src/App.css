@@ -14,7 +14,7 @@
 
 .nav-wrapper {
   max-width: var(--max-width);
-  width: 100%;
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,9 +28,10 @@
 
 .nav-wrapper .nav-title {
   color: var(--primary-color);
-  font-weight: 800;
-  font-size: xx-large;
   padding-block: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
 }
 
 .link-container {
@@ -63,14 +64,79 @@
 
 .book-card {
   max-width: var(--max-width);
-  width: 100%;
+  width: 85%;
   box-sizing: border-box;
   border: 1px solid var(--border-color);
   padding: 30px;
   background-color: #fff;
+  display: flex;
+  gap: 30px;
 }
 
-.book-container hr {
+.book-card-left-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  /* gap: 10px; */
+}
+
+.book-card-right-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.book-card-button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px;
+  height: 20px;
+}
+
+.book-card-button-container button {
+  background-color: transparent;
+  border: none;
+  color: #4386bf;
+
+  /* font-weight: 200; */
+  padding: 0;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.form button {
+  width: 20%;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+}
+
+.form input,
+.form select,
+.form button {
+  height: 2.813rem;
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.book-card-button-container button:hover {
+  cursor: pointer;
+}
+
+.vertical-divider {
+  border-left: 2px solid #e8e8e8;
+  height: 1.5rem;
+}
+
+.divider-book-form {
   border-top: 1px solid var(--border-color);
   max-width: 1000px;
   width: 80%;
@@ -78,16 +144,68 @@
 
 .book-category {
   font-weight: 600;
+  color: #121212;
+  opacity: 0.5;
+  font-size: 0.875rem;
 }
 
 .book-title {
-  font-size: larger;
-  font-weight: 700;
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #121212;
 }
 
 .book-author {
-  color: var(--primary-color);
-  font-weight: 700;
+  color: #4386bf;
+  font-weight: 300;
+  font-size: 0.875rem;
+  font-family: 'RobotoSlab', sans-serif;
+}
+
+.book-progressbar {
+  width: 20%;
+  height: auto;
+}
+
+.Percent {
+  font-size: 30px;
+}
+
+.complete {
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+}
+
+.currentCh {
+  opacity: 0.5;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+  padding-bottom: 5px;
+}
+
+.randomCh {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+.book-update-progress-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 7px 15px;
+  width: 11.5rem;
+  height: 2.063rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+}
+
+.book-update-progress-button:hover {
+  cursor: pointer;
 }
 
 .form-container {
@@ -97,7 +215,7 @@
 
 .form-wrapper {
   max-width: var(--max-width);
-  width: 100%;
+  width: 85%;
 }
 
 .form-wrapper h3 {
@@ -110,34 +228,17 @@
   display: flex;
   align-items: center;
   margin-bottom: 100px;
-  gap: 30px;
+  gap: 20px;
   box-sizing: border-box;
-  height: 45px;
-}
-
-.form input,
-.form select,
-.form button {
-  height: 100%;
-  padding: 10px 15px;
-  font-size: 15px;
-  border: 2px solid;
-  border-radius: 8px;
+  height: 55px;
 }
 
 .form input {
-  width: 60%;
+  width: 50%;
 }
 
 .form select {
-  width: 25%;
-}
-
-.form button {
-  width: 15%;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
+  width: 20%;
 }
 
 .form button:hover {
