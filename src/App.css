@@ -14,7 +14,7 @@
 
 .nav-wrapper {
   max-width: var(--max-width);
-  width: 75%;
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,7 +63,7 @@
 
 .book-card {
   max-width: var(--max-width);
-  width: 75%;
+  width: 85%;
   box-sizing: border-box;
   border: 1px solid var(--border-color);
   padding: 30px;
@@ -90,7 +90,8 @@
   display: flex;
   align-items: center;
   margin-top: 10px;
-  gap: 5px;
+  gap: 10px;
+  height: 20px;
 }
 
 .book-card-button-container button {
@@ -146,7 +147,7 @@
 
 .form-wrapper {
   max-width: var(--max-width);
-  width: 75%;
+  width: 85%;
 }
 
 .form-wrapper h3 {
