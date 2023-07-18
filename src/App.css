@@ -14,7 +14,7 @@
 
 .nav-wrapper {
   max-width: var(--max-width);
-  width: 100%;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,14 +63,50 @@
 
 .book-card {
   max-width: var(--max-width);
-  width: 100%;
+  width: 75%;
   box-sizing: border-box;
   border: 1px solid var(--border-color);
   padding: 30px;
   background-color: #fff;
+  display: flex;
+  gap: 30px;
 }
 
-.book-container hr {
+.book-card-left-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.book-card-right-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book-card-button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.book-card-button-container button {
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 200;
+  padding: 0;
+}
+
+.vertical-divider {
+  border-left: 2px solid var(--primary-color);
+  height: 80%;
+}
+
+.divider-book-form {
   border-top: 1px solid var(--border-color);
   max-width: 1000px;
   width: 80%;
@@ -90,6 +126,19 @@
   font-weight: 700;
 }
 
+.book-progressbar {
+  width: 20%;
+  height: auto;
+}
+
+.book-update-progress-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 10px;
+  padding: 7px 15px;
+}
+
 .form-container {
   display: grid;
   place-items: center;
@@ -97,7 +146,7 @@
 
 .form-wrapper {
   max-width: var(--max-width);
-  width: 100%;
+  width: 75%;
 }
 
 .form-wrapper h3 {
@@ -110,9 +159,9 @@
   display: flex;
   align-items: center;
   margin-bottom: 100px;
-  gap: 30px;
+  gap: 20px;
   box-sizing: border-box;
-  height: 45px;
+  height: 55px;
 }
 
 .form input,
@@ -126,15 +175,15 @@
 }
 
 .form input {
-  width: 60%;
+  width: 50%;
 }
 
 .form select {
-  width: 25%;
+  width: 15%;
 }
 
 .form button {
-  width: 15%;
+  width: 20%;
   background-color: var(--primary-color);
   color: #fff;
   border: none;
