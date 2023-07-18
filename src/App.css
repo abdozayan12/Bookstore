@@ -97,7 +97,7 @@
 .book-card-button-container button {
   background-color: transparent;
   border: none;
-  color: var(--primary-color);
+  color: rgb(46, 46, 127);
   font-weight: 200;
   padding: 0;
 }
