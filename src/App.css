@@ -102,6 +102,23 @@
   padding: 0;
 }
 
+.form button {
+  width: 20%;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+}
+
+.form input,
+.form select,
+.form button {
+  height: 100%;
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
 .book-card-button-container button:hover {
   cursor: pointer;
 }
@@ -173,29 +190,12 @@
   height: 55px;
 }
 
-.form input,
-.form select,
-.form button {
-  height: 100%;
-  padding: 10px 15px;
-  font-size: 15px;
-  border: 2px solid;
-  border-radius: 8px;
-}
-
 .form input {
   width: 50%;
 }
 
 .form select {
   width: 15%;
-}
-
-.form button {
-  width: 20%;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
 }
 
 .form button:hover {
